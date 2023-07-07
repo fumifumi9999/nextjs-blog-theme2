@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.84.0">
+  <title>TechForNexGen</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="carousel.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#myCarousel">GoodTech Ignition</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#myCarousel">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#profile">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu" tabindex="-1" aria-disabled="true">Menu</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Language
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./index_en.html">EN</a></li>
+                <li><a class="dropdown-item" href="./index.html">JP</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <img src="./img/TitleTech.png" class="d-block img-fluid" alt="TitletTech">
+            <rect width="100%" height="100%" fill="#777" />
+          </svg>
+
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <span class="carousel-title">
+                <h1>Alongside technology, humanity evolves</h1>
+                <p>Creating technology, humans and technology evolve together. Changing the world.</p>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <img src="./img/TitleBusiness.png" class="d-block img-fluid" alt="TitleBusiness">
+            <rect width="100%" height="100%" fill="#777" />
+          </svg>
+
+          <div class="container">
+            <div class="carousel-caption">
+              <span class="carousel-title">
+                <h1>Alongside business, people's lives evolve</h1>
+                <p>Creating businesses, changing each individual's life. Changing the world.</p>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <img src="./img/TitleManufacturing.png" class="d-block img-fluid" alt="TitleManufacturing">
+            <rect width="100%" height="100%" fill="#777" />
+          </svg>
+
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <span class="carousel-title">
+                <h1>Alongside tangible objects, human environments evolve</h1>
+                <p>Manufacturing in factories, creating environments. Changing the world.</p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <!-- Marketing messaging and featurettes
+  ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+      <h1 id="profile" class="display-1">Profile</h1>
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="./img/Face.png" alt="Face" class="bd-placeholder-img rounded-circle" width="140" height="140">
+          <h2>Characteristics</h2>
+          <p>Fumi from GoodTech, a big fan of manufacturing. Recently, she's been into IT and AI tech rather than manufacturing tech.
+            She is also skilled in business development, UX research, and project management, and enjoys working in diverse teams.
+            She has a mild-mannered personality.
+          </p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="./img/Background.png" alt="Face" class="bd-placeholder-img rounded-circle" width="140" height="140">
+
+          <h2>Background</h2>
+          <p>Studied robotics engineering at university and joined a motorcycle manufacturer.
+            After conducting Electric Vehicle(EV) research, she obtained an MBA in the United States. Upon returning to her home country, she worked on business development and UX research at the same manufacturer.
+            She then joined a major consulting firm and engaged in digital marketing consulting.
+            Currently, she works as an AI engineer and develops solutions at a major automotive parts supplier.
+          </p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="./img/Offer.png" alt="Face" class="bd-placeholder-img rounded-circle" width="140" height="140">
+          <h2>Abilities</h2>
+          <p>Consulting in areas ranging from manufacturing tech to IT and AI tech, supporting from strategy to implementation.
+            Leading or providing guidance for business development and projects.
+            Combining these skills for tech business planning, development project progress, and guidance.
+          </p>
+        </div><!-- /.col-lg-4 -->
+
+      </div><!-- /.row -->
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+      <h1 id="menu" class="display-1">Offering Menu</h1>
+      <div class="row featurette d-flex align-items-start">
+        <div class="col-md-7">
+          <h2 class="featurettes d-flex justify-content-center">-Business/Consulting-</h2>
+          <ul class="list-group list-group-flush ">
+            <li class="list-group-item d-flex justify-content-center">Business PowerPoint (macro) creation & support</li>
+            <li class="list-group-item d-flex justify-content-center">Business Excel (macro) creation & support</li>
+            <li class="list-group-item d-flex justify-content-center">Business development & support</li>
+            <li class="list-group-item d-flex justify-content-center">Project management</li>
+            <li class="list-group-item d-flex justify-content-center">Digital marketing</li>
+          </ul>
+        </div>
+        <div class="col-md-5">
+          <img src="./img/menu_business.png" alt="Face" class="bd-placeholder-img featurette-image img-fluid mx-auto"
+            width="500" height="500">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurettes d-flex justify-content-center">-Manufacturing & Coding-</h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-center">Front-end/Back-end development & support</li>
+            <li class="list-group-item d-flex justify-content-center">Data analysis & support</li>
+            <li class="list-group-item d-flex justify-content-center">Machine learning/AI development & support</li>
+            <li class="list-group-item d-flex justify-content-center">IoT device development & support</li>
+            <li class="list-group-item d-flex justify-content-center">EV & drone development & support</li>
+          </ul>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="./img/menu_coding.png" alt="Face" class="bd-placeholder-img featurette-image img-fluid mx-auto"
+            width="500" height="500">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurettes d-flex justify-content-center">-UX Research-</h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-center">Surveys & interviews</li>
+            <li class="list-group-item d-flex justify-content-center">Persona creation & support</li>
+            <li class="list-group-item d-flex justify-content-center">Customer journey creation & support</li>
+            <li class="list-group-item d-flex justify-content-center">Framework creation & support</li>
+            <li class="list-group-item d-flex justify-content-center">Data analysis & support</li>
+          </ul>
+        </div>
+        <div class="col-md-5">
+          <img src="./img/menu_ux.png" alt="Face" class="bd-placeholder-img featurette-image img-fluid mx-auto"
+            width="500" height="500">
+        </div>
+      </div>
+
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+
+    <div class="container">
+      <div class="main container-fluid">
+        <div class="row bg-light text-dark py-5">
+          <div class="col-md-8 offset-md-2">
+            <h2 class="fs-1 mb-5 text-center fw-bold">Contact Us</h2>
+            <form method="post" action="mail.php" netlify netlify-honeypot="bot-field hidden">
+              <div class="mb-3">
+                <input type="text" class="form-control" name="Name" placeholder="Name (Required)" value="">
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" name="Email" placeholder="Email Address (Required)" value="">
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" name="Phone Number" placeholder="Phone Number" value="">
+              </div>
+              <div class="mb-4">
+                <textarea class="form-control" name="Inquiry Content" rows="5" placeholder="Please enter the details of your inquiry"></textarea>
+              </div>
+              <div class="form-check mb-4">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                <label class="form-check-label" for="flexCheckIndeterminate">
+                  I agree to the terms of use. <a href="./privacy_policy.html" target="_blank" rel="noopener noreferrer"
+                    class="text-decoration-underline text-dark">Click here for the Privacy Policy (Japanes Only)</a>
+                </label>
+              </div>
+              <div class="text-center pt-4 col-md-6 offset-md-3">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <p class="float-end"><a href="#myCarousel">Back to top</a></p>
+      <p>&copy; 2021–2025 GoodTech Ignition &middot; <a href="./privacy_policy.html">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+  </main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
