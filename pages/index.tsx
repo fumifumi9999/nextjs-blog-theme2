@@ -1,56 +1,30 @@
-import Container from '../components/container'
-import MoreStories from '../components/more-stories'
-import HeroPost from '../components/hero-post'
-import Intro from '../components/intro'
-import Layout from '../components/layout'
-import { getAllPosts } from '../lib/api'
-import Head from 'next/head'
-import { CMS_NAME } from '../lib/constants'
-import Post from '../interfaces/post'
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 
-type Props = {
-  allPosts: Post[]
-}
+const HomePage = () => {
+  const router = useRouter();
+  const [isLoading, setIsLoading] = useState(true);
 
-export default function Index({ allPosts }: Props) {
-  const heroPost = allPosts[0]
-  const morePosts = allPosts.slice(1)
-  return (
-    <>
-      <Layout>
-        <Head>
-          <title>{`Next.js Blog Example with ${CMS_NAME}`}</title>
-        </Head>
-        <Container>
-          <Intro />
-          {heroPost && (
-            <HeroPost
-              title={heroPost.title}
-              coverImage={heroPost.coverImage}
-              date={heroPost.date}
-              author={heroPost.author}
-              slug={heroPost.slug}
-              excerpt={heroPost.excerpt}
-            />
-          )}
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-        </Container>
-      </Layout>
-    </>
-  )
-}
+  useEffect(() => {
+    // データの非同期読み込みをシミュレートするために、一定時間後にisLoadingをfalseに設定
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
 
-export const getStaticProps = async () => {
-  const allPosts = getAllPosts([
-    'title',
-    'date',
-    'slug',
-    'author',
-    'coverImage',
-    'excerpt',
-  ])
+    return () => clearTimeout(timer);
+  }, []);
 
-  return {
-    props: { allPosts },
+  useEffect(() => {
+    if (!isLoading) {
+      router.push('/index_ja.html');
+    }
+  }, [isLoading]);
+
+  if (isLoading) {
+    return <div>Loading...</div>;
   }
-}
+
+  return null;
+};
+
+export default HomePage;
